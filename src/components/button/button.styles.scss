@@ -1,0 +1,50 @@
+/** @format */
+
+$btn-color-pink: #ff5c9e;
+$btn-hover-color-pink: #ff5c9e;
+$color-white: #ffffff;
+$category-btn-text-color: #1c1c1c;
+$btn-categories-hover-color: #e1e1e1;
+
+%btn-base {
+  font-size: 14px;
+  border: none;
+  letter-spacing: 0.09px;
+  transition: all 0.4s;
+  height: 40px;
+}
+
+%btn-base:hover {
+  cursor: pointer;
+}
+
+.btn-pink {
+  @extend %btn-base;
+  width: 178px;
+  background-color: $btn-color-pink;
+  color: $color-white;
+  margin: auto;
+  border-radius: 16px;
+}
+
+.btn-pink:hover {
+  background-color: $btn-hover-color-pink;
+  opacity: 0.8;
+}
+
+.btn-categories {
+  @extend %btn-base;
+  width: 100%;
+  border-radius: 0 16px 16px 0;
+  border: 1px solid #e1e1e1;
+  background-color: $color-white;
+  color: $category-btn-text-color;
+  padding-right: 25px;
+  background-image: url(../../assets/images/icons/Icon-arrow-ios-right.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+
+  &:hover {
+    background-color: inherit;
+  }
+}

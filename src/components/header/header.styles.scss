@@ -1,0 +1,107 @@
+/** @format */
+
+// COLORS
+
+$color-primary: #ffbc00;
+$color-secondary: #30343f;
+$color-tertiary: #e1e1e1;
+$btn-categories-hover-color: #e1e1e1;
+
+.header {
+  background-color: $color-secondary;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 60px;
+    max-width: 1188px;
+    max-height: 60px;
+    margin: auto;
+
+    &__title,
+    &__btn {
+      display: flex;
+
+      .title {
+        color: $color-primary;
+        font-size: 28px;
+        text-transform: uppercase;
+        display: inline;
+        letter-spacing: -2px;
+        font-stretch: ultra-condensed;
+        margin: auto;
+
+        &__first-part {
+          font-weight: 700;
+        }
+
+        &__second-part {
+          font-weight: 200;
+        }
+      }
+    }
+
+    &__search {
+      display: flex;
+    }
+
+    div {
+      // border: 1px solid red;
+    }
+  }
+}
+
+.search__container {
+  position: relative;
+  margin: auto;
+  display: flex;
+  height: 40px;
+  width: 582px;
+
+  &__left,
+  &__right {
+    border: none;
+  }
+
+  &__left {
+    width: 404px;
+
+    &__input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid $color-tertiary;
+      border-radius: 16px 0 0 16px;
+      padding-left: 44px;
+      outline: none;
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+  }
+
+  &__right {
+    width: 178px;
+    position: relative;
+    background-color: $btn-categories-hover-color;
+    border-radius: 0 16px 16px 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    // this may not be nescessary
+    &:hover &__arrow {
+      background-color: inherit;
+    }
+
+    &__arrow {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      transition: all 0.4s;
+    }
+  }
+}
