@@ -23,7 +23,7 @@ $btn-categories-hover-color: #e1e1e1;
   width: 178px;
   background-color: $btn-color-pink;
   color: $color-white;
-  margin: auto;
+  margin: auto 0 auto auto;
   border-radius: 16px;
 }
 
@@ -40,11 +40,59 @@ $btn-categories-hover-color: #e1e1e1;
   background-color: $color-white;
   color: $category-btn-text-color;
   padding-right: 25px;
-  background-image: url(../../assets/images/icons/Icon-arrow-ios-right.svg);
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
+  // background-image: url(../../assets/images/icons/Icon-arrow-ios-right.svg);
+  // background-repeat: no-repeat;
+  // background-position: 95% 50%;
+  border-left: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    margin-left: 10px;
+    margin-top: -2px;
+    background: url(../../assets/images/icons/Icon-arrow-ios-right.svg) 0 0
+      no-repeat;
+    transition: all 0.4s;
+  }
+
+  &::before {
+    content: "";
+    width: 1px;
+    height: 70%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.4s;
+  }
 
   &:hover {
     background-color: inherit;
+  }
+
+  &:focus {
+    background-color: #fff;
+    color: #fff;
+    // border: none;
+    border-left: 2px solid #e1e1e1;
+  }
+
+  &:hover::before {
+    visibility: hidden;
+    height: 100%;
+    background-color: #e1e1e1;
+  }
+
+  &:focus::before {
+    display: none;
+  }
+
+  &:focus::after {
+    transform: rotate(180deg);
+    backface-visibility: hidden;
   }
 }
