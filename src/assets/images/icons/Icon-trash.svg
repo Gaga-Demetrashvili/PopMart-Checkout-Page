@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Icon_trash" data-name="Icon/trash" transform="translate(-628.79 -5552.79)" opacity="0.5">
+    <rect id="Rectangle_7446" data-name="Rectangle 7446" width="20" height="20" transform="translate(628.79 5552.79)" fill="none" opacity="0"/>
+    <g id="Icon_trash-2" data-name="Icon/trash" transform="translate(633.79 5556.79)">
+      <path id="_Icon_Сolor" data-name="🎨 Icon Сolor" d="M7.5,12h-5A1.671,1.671,0,0,1,1,10.2V3.6H.5A.557.557,0,0,1,0,3a.557.557,0,0,1,.5-.6H3v-1A1.327,1.327,0,0,1,4.25,0h1.5A1.328,1.328,0,0,1,7,1.4v1H9.5A.557.557,0,0,1,10,3a.557.557,0,0,1-.5.6H9v6.6A1.671,1.671,0,0,1,7.5,12ZM2,3.6v6.6a.557.557,0,0,0,.5.6h5a.557.557,0,0,0,.5-.6V3.6ZM4.25,1.2A.237.237,0,0,0,4,1.4v1H6v-1a.237.237,0,0,0-.25-.2Z" transform="translate(0 0.001)" fill="#513c63"/>
+    </g>
+  </g>
+</svg>

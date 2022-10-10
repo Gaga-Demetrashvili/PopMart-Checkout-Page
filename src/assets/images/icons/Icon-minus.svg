@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="_Icon_Сolor" data-name="🎨 Icon Сolor" d="M11.25,2H.75C.336,2,0,1.553,0,1S.336,0,.75,0h10.5c.415,0,.75.447.75,1s-.335,1-.75,1" fill="#513c63"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_minus" data-name="Icon/minus" transform="translate(-4 -4)" opacity="0.5">
+    <g id="Rectangle_5471" data-name="Rectangle 5471" transform="translate(4 4)" fill="none" stroke="#513c63" stroke-width="1">
+      <rect width="24" height="24" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="none"/>
+    </g>
+    <g id="Icon_minus-2" data-name="Icon/minus" transform="translate(8 8)">
+      <rect id="Rectangle_5296" data-name="Rectangle 5296" width="16" height="16" fill="none" opacity="0"/>
+      <g id="Icon_minus-3" data-name="Icon/minus" transform="translate(2 7)">
+        <path id="_Icon_Сolor-2" data-name="🎨 Icon Сolor" d="M11.25,2H.75C.336,2,0,1.553,0,1S.336,0,.75,0h10.5c.415,0,.75.447.75,1s-.335,1-.75,1" fill="#513c63"/>
+      </g>
+    </g>
+  </g>
+</svg>

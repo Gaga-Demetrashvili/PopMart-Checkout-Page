@@ -1,9 +1,16 @@
 /** @format */
 
 import "./main.styles.scss";
+import CheckoutLeft from "../checkout-left/checkout-left.component";
 
-const Main = props => {
-  return <main className="main__content">{props.children}</main>;
+const Main = () => {
+  return (
+    <main className="main__content">
+      <div className="main__content__left">
+        <CheckoutLeft />
+      </div>
+    </main>
+  );
 };
 
 export default Main;
