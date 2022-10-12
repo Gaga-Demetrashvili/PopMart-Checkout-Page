@@ -1,8 +1,5 @@
 /** @format */
-
-$box-shadow-color: #0000001a;
-$navigation-item-text-color-on-hover: #1c1c1c;
-$navigation-item-background-color-on-hover: #f8f8f8;
+@import "../../assets/styles/variables";
 
 .navigation {
   width: 100%;
@@ -13,7 +10,7 @@ $navigation-item-background-color-on-hover: #f8f8f8;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    color: #ffffff;
+    color: $color-white;
     padding: 0;
     font-size: 13px;
     margin: 0 auto;

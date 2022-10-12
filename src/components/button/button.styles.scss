@@ -1,10 +1,5 @@
 /** @format */
-
-$btn-color-pink: #ff5c9e;
-$btn-hover-color-pink: #ff5c9e;
-$color-white: #ffffff;
-$category-btn-text-color: #1c1c1c;
-$btn-categories-hover-color: #e1e1e1;
+@import "../../assets/styles/variables";
 
 %btn-base {
   font-size: 14px;
@@ -28,7 +23,7 @@ $btn-categories-hover-color: #e1e1e1;
 }
 
 .btn-pink:hover {
-  background-color: $btn-hover-color-pink;
+  background-color: $btn-color-pink;
   opacity: 0.8;
 }
 
@@ -36,7 +31,7 @@ $btn-categories-hover-color: #e1e1e1;
   @extend %btn-base;
   width: 100%;
   border-radius: 0 16px 16px 0;
-  border: 1px solid #e1e1e1;
+  border: 1px solid $btn-categories-hover-color;
   background-color: $color-white;
   color: $category-btn-text-color;
   padding-right: 25px;
@@ -62,7 +57,7 @@ $btn-categories-hover-color: #e1e1e1;
     content: "";
     width: 1px;
     height: 70%;
-    background-color: #000;
+    background-color: $color-black;
     position: absolute;
     left: 0;
     top: 50%;
@@ -75,16 +70,15 @@ $btn-categories-hover-color: #e1e1e1;
   }
 
   &:focus {
-    background-color: #fff;
-    color: #fff;
+    background-color: $color-white;
+    color: $color-white;
     // border: none;
-    border-left: 2px solid #e1e1e1;
+    border-left: 2px solid $btn-categories-hover-color;
   }
 
   &:hover::before {
-    visibility: hidden;
     height: 100%;
-    background-color: #e1e1e1;
+    background-color: $btn-categories-hover-color;
   }
 
   &:focus::before {

@@ -7,6 +7,8 @@ const CheckoutLeft = () => {
     <div className="checkout__left__container">
       <h3 className="checkout__left__container__title">პროდუქტ(ებ)ი</h3>
       <CheckoutItem />
+      <CheckoutItem />
+      <CheckoutItem />
     </div>
   );
 };

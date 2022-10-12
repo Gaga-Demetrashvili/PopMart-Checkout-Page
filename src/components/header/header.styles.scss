@@ -1,12 +1,5 @@
 /** @format */
-
-// COLORS
-
-$color-primary: #ffbc00;
-$color-secondary: #30343f;
-$color-tertiary: #e1e1e1;
-$btn-categories-hover-color: #e1e1e1;
-$box-shadow-color: #0000001a;
+@import "../../assets/styles/variables";
 
 .header {
   background-color: $color-secondary;
