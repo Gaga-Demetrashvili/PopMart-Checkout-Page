@@ -6,10 +6,22 @@
   padding: 0;
   margin: 0;
 
-  &__left {
-    max-width: 1188px;
-    height: auto;
-    background-color: aqua;
+  &__container {
+    width: 1188px;
     margin: 0 auto;
+    // background-color: aqua;
+    display: grid;
+    grid-template-columns: 775px 380px;
+    justify-content: space-between;
+
+    &__left {
+      height: auto;
+    }
+
+    &__right {
+      height: auto;
+      // background-color: chocolate;
+      right: 0;
+    }
   }
 }

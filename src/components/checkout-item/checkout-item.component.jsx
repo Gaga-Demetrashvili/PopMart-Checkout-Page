@@ -99,7 +99,7 @@ const CheckoutItem = () => {
                     transform="translate(4 4)"
                     fill="none"
                     stroke="#513c63"
-                    stroke-width="1"
+                    strokeWidth="1"
                   >
                     <rect width="24" height="24" rx="8" stroke="none" />
                     <rect
@@ -171,7 +171,7 @@ const CheckoutItem = () => {
                     transform="translate(3.964 4)"
                     fill="none"
                     stroke="#513c63"
-                    stroke-width="1"
+                    strokeWidth="1"
                   >
                     <rect width="24" height="24" rx="8" stroke="none" />
                     <rect

@@ -1,0 +1,26 @@
+/** @format */
+@import "../../assets/styles/variables";
+
+.order__container {
+  height: 424px;
+  box-shadow: 0 0 30px $order-container-box-shadow;
+  padding: 24px 24px 32px 24px;
+
+  &__promotion {
+    width: 332px;
+    height: 60px;
+    border: 1px solid $promotion-border-color-default;
+    padding: 10px 16px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+    &__input {
+      outline: none;
+      border: none;
+    }
+  }
+}
