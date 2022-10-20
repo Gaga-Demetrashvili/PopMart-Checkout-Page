@@ -2,9 +2,10 @@
 
 .main__content {
   width: 100%;
-  //   background-color: aquamarine;
+  background-color: aquamarine;
   padding: 0;
   margin: 0;
+  position: relative; // for sticky order component
 
   &__container {
     width: 1188px;

@@ -14,7 +14,7 @@ const Order = () => {
           placeholder="Code"
           type="text"
         />
-        <Button text="გამოყენება" style={BUTTON_TYPE_CLASSES.promotion} />
+        <Button style={BUTTON_TYPE_CLASSES.promotion}>გამოყენება</Button>
       </div>
       <div className="order__details">
         <ul className="order__details__list--left">
@@ -30,7 +30,7 @@ const Order = () => {
           <li>2 884 ₾</li>
         </ul>
       </div>
-      <Button text="შეკვეთის გაფორმება" style={BUTTON_TYPE_CLASSES.order} />
+      <Button style={BUTTON_TYPE_CLASSES.order}>შეკვეთის გაფორმება</Button>
     </div>
   );
 };

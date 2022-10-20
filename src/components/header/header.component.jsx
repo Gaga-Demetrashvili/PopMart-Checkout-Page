@@ -4,8 +4,6 @@ import Button from "../button/button.component";
 import { BUTTON_TYPE_CLASSES } from "../button/button.component";
 import Navigation from "../navigation/navigation.component";
 
-console.log(BUTTON_TYPE_CLASSES);
-
 const Header = () => {
   return (
     <header className="header">
@@ -58,10 +56,9 @@ const Header = () => {
                 />
               </div>
               <div className="search__container__right">
-                <Button
-                  text="ყველა კატეგორია"
-                  style={BUTTON_TYPE_CLASSES.categories}
-                />
+                <Button style={BUTTON_TYPE_CLASSES.categories}>
+                  ყველა კატეგორია
+                </Button>
                 {/* <svg
                 className="search__container__right__arrow"
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +97,7 @@ const Header = () => {
             </div>
           </div>
           <div className="header__container__btn">
-            <Button text="% ფასდაკლებები" style={BUTTON_TYPE_CLASSES.pink} />
+            <Button style={BUTTON_TYPE_CLASSES.pink}>% ფასდაკლებები</Button>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 /** @format */
 import CheckoutItem from "../checkout-item/checkout-item.component";
 import "./checkout-left.styles.scss";
+import AddressComp from "../address-component/address.component";
 
 const CheckoutLeft = () => {
   return (
@@ -9,6 +10,7 @@ const CheckoutLeft = () => {
       <CheckoutItem />
       <CheckoutItem />
       <CheckoutItem />
+      <AddressComp />
     </div>
   );
 };

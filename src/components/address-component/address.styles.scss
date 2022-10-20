@@ -1,0 +1,45 @@
+/** @format */
+@import "./../../assets/styles/variables";
+
+.address__component {
+  width: 100%;
+  height: 254px;
+  margin-top: 32px;
+  border: 1px solid $color-tertiary;
+  background-color: $color-white;
+  border-radius: 24px;
+  padding: 16px 24px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  &__main {
+    width: auto;
+    height: 70%;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    background-color: azure;
+    display: flex;
+  }
+}
+
+.radio-buttons-group {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.border {
+  width: 2px;
+  background-color: $color-tertiary;
+  margin-left: 28px;
+  margin-right: 24px;
+}

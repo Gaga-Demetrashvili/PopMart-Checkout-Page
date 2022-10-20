@@ -119,3 +119,29 @@
     opacity: 0.8;
   }
 }
+
+.btn-dashed {
+  @extend %btn-base;
+  border: 1px dashed $btn-dashed-border-and-text-color;
+  background-color: transparent;
+  outline: none;
+  border-radius: 12px;
+  width: 115px;
+  height: 40px;
+  color: $btn-dashed-border-and-text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  &:hover {
+    border-style: solid;
+  }
+
+  &:disabled {
+    border-color: $price-color-black;
+    color: $price-color-black;
+    opacity: 0.5;
+    border-style: solid;
+  }
+}
