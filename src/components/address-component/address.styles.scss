@@ -3,12 +3,13 @@
 
 .address__component {
   width: 100%;
-  height: 254px;
+  height: max-content;
   margin-top: 32px;
   border: 1px solid $color-tertiary;
   background-color: $color-white;
   border-radius: 24px;
   padding: 16px 24px 0;
+  position: relative;
 
   &__top {
     display: flex;
@@ -25,13 +26,12 @@
     height: 70%;
     margin-top: 8px;
     margin-bottom: 30px;
-    background-color: azure;
+    // background-color: azure;
     display: flex;
   }
 }
 
 .radio-buttons-group {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -42,4 +42,46 @@
   background-color: $color-tertiary;
   margin-left: 28px;
   margin-right: 24px;
+}
+
+.address-details {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+    font-size: 14px;
+
+    li {
+      margin-top: 16px;
+    }
+  }
+
+  &__list--left {
+    text-align: left;
+    color: $prev-price-color;
+  }
+
+  &__list--right {
+    text-align: right;
+    width: 60%;
+    color: $price-color-black;
+  }
+}
+
+.address-link {
+  &:link,
+  &:visited {
+    position: absolute;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 471px;
+    bottom: 17px;
+    color: $btn-promotion-color;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
 }

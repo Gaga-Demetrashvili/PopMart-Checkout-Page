@@ -42,7 +42,26 @@ const AddressComp = () => {
           <RadioButton label="სხვა" name="address" id="other" />
         </div>
         <div className="border"></div>
+        <div className="address-details">
+          <ul className="address-details__list--left">
+            <li>სახელი და გვარი:</li>
+            <li>ტელეფონის ნომერი:</li>
+            <li>ქალაქი:</li>
+            <li>მისამართი:</li>
+          </ul>
+          <ul className="address-details__list--right">
+            <li>არჩილ ლებანიძე</li>
+            <li>+995 568056897</li>
+            <li>თბილისი</li>
+            <li>
+              Celeste Slater 606-3727 Ullamcorper. Street Roseville NH 11523
+            </li>
+          </ul>
+        </div>
       </div>
+      <a href="#" className="address-link">
+        რედაქტირება
+      </a>
     </div>
   );
 };
