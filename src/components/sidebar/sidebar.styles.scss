@@ -1,0 +1,52 @@
+/** @format */
+@import "./../../assets/styles/variables";
+
+.sidebar {
+  width: 64px;
+  height: 200px;
+  position: fixed;
+  right: 0;
+  top: 176px;
+  background-color: $color-secondary;
+  border-radius: 24px 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1000;
+}
+
+.icon-container {
+  border: 1px solid transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+
+  svg {
+    margin: auto;
+  }
+
+  &:hover {
+    border: 1px solid $btn-order-color;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.cart-item-num {
+  font-size: 11px;
+  color: black;
+  font-weight: 600;
+  background-color: $btn-color-pink;
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  top: 3px;
+  right: 3px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}

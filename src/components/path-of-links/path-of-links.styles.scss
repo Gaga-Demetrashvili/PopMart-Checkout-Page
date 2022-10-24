@@ -28,6 +28,8 @@
 
 .lastLink:link,
 .lastLink:visited {
+  font-size: 14px;
+  font-weight: 500;
   color: $btn-dashed-border-and-text-color;
   text-decoration: none;
 }
