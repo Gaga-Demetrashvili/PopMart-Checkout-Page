@@ -3,10 +3,15 @@
 .checkout__left__container {
   width: 785px;
   height: auto;
-  background-color: yellowgreen;
-  margin-top: 74px;
+  // background-color: yellowgreen;
+  margin-top: 24px;
 
   &__title {
     font-size: 20px;
+  }
+
+  .linkPath {
+    margin-bottom: 33px;
+    display: flex;
   }
 }

@@ -1,0 +1,33 @@
+/** @format */
+@import "./../../assets/styles/variables";
+
+.link__container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 4px;
+}
+
+.arrow-right {
+  position: relative;
+  top: 3px;
+}
+
+.pathLink:link,
+.pathLink:visited {
+  text-decoration: none;
+  font-size: 14px;
+  color: $prev-price-color;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.pathLink:hover,
+.pathLink:active {
+}
+
+.lastLink:link,
+.lastLink:visited {
+  color: $btn-dashed-border-and-text-color;
+  text-decoration: none;
+}
