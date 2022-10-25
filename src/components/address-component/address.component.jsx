@@ -43,20 +43,24 @@ const AddressComp = () => {
         </div>
         <div className="border"></div>
         <div className="address-details">
-          <ul className="address-details__list--left">
-            <li>სახელი და გვარი:</li>
-            <li>ტელეფონის ნომერი:</li>
-            <li>ქალაქი:</li>
-            <li>მისამართი:</li>
-          </ul>
-          <ul className="address-details__list--right">
-            <li>არჩილ ლებანიძე</li>
-            <li>+995 568056897</li>
-            <li>თბილისი</li>
-            <li>
+          <div className="address-details__detail">
+            <span className="detail-name">სახელი და გვარი:</span>
+            <span className="detail-info">არჩილ ლებანიძე</span>
+          </div>
+          <div className="address-details__detail">
+            <span className="detail-name">ტელეფონის ნომერი:</span>
+            <span className="detail-info">+995 568056897</span>
+          </div>
+          <div className="address-details__detail">
+            <span className="detail-name">ქალაქი:</span>
+            <span className="detail-info">თბილისი</span>
+          </div>
+          <div className="address-details__detail">
+            <span className="detail-name">მისამართი:</span>
+            <span className="detail-info">
               Celeste Slater 606-3727 Ullamcorper. Street Roseville NH 11523
-            </li>
-          </ul>
+            </span>
+          </div>
         </div>
       </div>
       <a href="#" className="address-link">

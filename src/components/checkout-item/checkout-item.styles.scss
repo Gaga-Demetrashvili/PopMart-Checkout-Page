@@ -14,6 +14,17 @@
   border-radius: 8px;
 }
 
+@mixin flex-with-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin trunc-string-on-one-line {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .checkout__item {
   width: 100%;
   height: 107px;
@@ -54,12 +65,16 @@
         &__price {
           font-size: 16px;
           color: $price-color-black;
+          @include flex-with-align-center;
+          gap: 4px;
         }
 
         &__prev-price {
           font-size: 14px;
           color: $prev-price-color;
           text-decoration: line-through;
+          @include flex-with-align-center;
+          gap: 4px;
         }
 
         &__sale {
@@ -68,6 +83,7 @@
           border: 1px solid $btn-color-pink;
           padding: 0px 6px;
           border-radius: 16px;
+          @include flex-with-align-center;
         }
 
         &__btn-remove {
@@ -113,6 +129,8 @@
   }
 
   &__description {
+    width: 400px;
+
     p {
       margin: auto 0;
       padding: 0;
@@ -120,6 +138,11 @@
       line-height: 1.2;
       color: $category-btn-text-color;
       opacity: 0.5;
+
+      //truncation
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
       &:not(:last-child) {
         margin-bottom: 12px;

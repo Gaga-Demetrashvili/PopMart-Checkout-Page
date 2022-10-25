@@ -17,18 +17,30 @@ const Order = () => {
         <Button style={BUTTON_TYPE_CLASSES.promotion}>გამოყენება</Button>
       </div>
       <div className="order__details">
-        <ul className="order__details__list--left">
-          <li>პროდუქტი (3)</li>
-          <li>მიტანის ღირებულება</li>
-          <li>პრომო კოდი</li>
-          <li>ჯამური ღირებულება</li>
-        </ul>
-        <ul className="order__details__list--right">
-          <li>2 899 ₾</li>
-          <li>15 ₾</li>
-          <li>-25%</li>
-          <li>2 884 ₾</li>
-        </ul>
+        <div className="order__details__detail">
+          <span className="text-details">პროდუქტი (2)</span>
+          <p className="price-details">
+            <span className="order-price">2 899</span> ₾
+          </p>
+        </div>
+        <div className="order__details__detail">
+          <span className="text-details">მიტანის ღურებულება</span>
+          <p className="price-details">
+            <span className="order-price">15</span> ₾
+          </p>
+        </div>
+        <div className="order__details__detail">
+          <span className="text-details">პრომო კოდი</span>
+          <p className="price-details discount">
+            <span className="order-discount">-25</span>%
+          </p>
+        </div>
+        <div className="order__details__detail">
+          <span className="text-details">ჯამური ღირებულება</span>
+          <p className="price-details">
+            <span className="order-price-big">2 884</span> ₾
+          </p>
+        </div>
       </div>
       <Button style={BUTTON_TYPE_CLASSES.order}>შეკვეთის გაფორმება</Button>
     </div>

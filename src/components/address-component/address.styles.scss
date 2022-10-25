@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8px;
 
     h3 {
       margin: 0;
@@ -23,7 +24,6 @@
 
   &__main {
     width: auto;
-    height: 70%;
     margin-top: 8px;
     margin-bottom: 30px;
     // background-color: azure;
@@ -45,27 +45,30 @@
 }
 
 .address-details {
-  display: flex;
-  justify-content: space-between;
-
-  ul {
-    list-style: none;
+  &__detail {
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
+    margin-top: 16px;
+    max-height: 40px;
 
-    li {
-      margin-top: 16px;
+    .detail-name {
+      color: $prev-price-color;
     }
-  }
 
-  &__list--left {
-    text-align: left;
-    color: $prev-price-color;
-  }
+    .detail-info {
+      display: inline-block;
+      color: $price-color-black;
+      max-width: 60%;
+      text-align: right;
+      padding-right: 10px;
 
-  &__list--right {
-    text-align: right;
-    width: 60%;
-    color: $price-color-black;
+      //line clamp
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 }
 
@@ -76,7 +79,7 @@
     text-decoration: none;
     font-size: 14px;
     padding-left: 471px;
-    bottom: 17px;
+    bottom: 10px;
     color: $btn-promotion-color;
   }
 

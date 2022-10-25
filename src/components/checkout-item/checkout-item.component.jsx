@@ -24,12 +24,14 @@ const CheckoutItem = () => {
         <div className="checkout__item__wrapper__actions">
           <div className="checkout__item__wrapper__actions__top">
             <p className="checkout__item__wrapper__actions__top__price">
-              2899 ₾
+              <span className="price-box">2899</span> ₾
             </p>
             <p className="checkout__item__wrapper__actions__top__prev-price">
-              3000 ₾
+              <span className="price-box">3000</span> ₾
             </p>
-            <p className="checkout__item__wrapper__actions__top__sale">-3.7%</p>
+            <p className="checkout__item__wrapper__actions__top__sale">
+              <span className="discount-box">-3.7</span>%
+            </p>
             <button className="checkout__item__wrapper__actions__top__btn-remove">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
